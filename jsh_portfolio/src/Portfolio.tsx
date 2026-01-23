@@ -122,6 +122,21 @@ function Portfolio() {
                 </div>
               </div>
             </Link>
+            {/* Project 3 - Chatting로 링크 */}
+            <Link
+              to="/Chatting"
+              className="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+              <div className="h-48 bg-linear-to-br from-blue-400 to-cyan-400"></div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-2">Chatting</h3>
+                <p className="text-gray-600 mb-4">여러 스타일 시계</p>
+                <div className="flex gap-2">
+                  <span className="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">
+                    React
+                  </span>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>

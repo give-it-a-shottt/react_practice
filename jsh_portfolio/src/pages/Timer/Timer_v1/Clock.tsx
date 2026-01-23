@@ -15,11 +15,17 @@ export default class Clock extends Component<props, state> {
     currentTime: new Date(),
   };
 
+  handle: number = 0;
   componentDidMount(): void {
-    setInterval(() => {
+    this.handle = setInterval(() => {
+      console.log("tick");
       this.setState({ currentTime: new Date() });
     }, 1000);
   }
+
+  componentWillUnmount = () => {
+    clearInterval(this.handle);
+  };
 
   render() {
     return (
